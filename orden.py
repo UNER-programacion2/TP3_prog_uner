@@ -16,10 +16,10 @@ class Orden:
 
 #####<<Comandos>>
     def establecerNroOrden(self, nroO: int):
-        self.nroOrden= nroO
+        self.__nroOrden= nroO
 
     def establecerPizzas(self, pizzas: list[Pizza]):
-        self.pizzas = pizzas     
+        self.__pizzas = pizzas     
 
     def establecerEstadoOrden(self, est: int):
         if est not in [Orden.ESTADO_INICIAL, Orden.ESTADO_PARA_ENTREGAR, Orden.ESTADO_ENTREGADA]:

@@ -43,7 +43,7 @@ class MaestroPizzero:
 # ESTE CODIGO ES EL QUE HICIMOS EL DE ARRIBA ES DECOPILOT 
 # class MaestroPizzero:
 
-#     def __init__(self, nom: str, ordenes : list):
+#     def __init__(self, nombre str, ordenes : list):
 #         self.__nombre = nom
 #         #self.__pizzasPorCocinar = []
 #         #self.__pizzasPorEntregar = []

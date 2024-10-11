@@ -11,8 +11,8 @@ class Pizza:
         self.__variedad = var
         self.__estado = Pizza.ESTADO_POR_COCINAR
 
-    #comandos 
-    def establecerVariedad(self, var: str):
+########comandos 
+    def establecerVariedad(self, var: PizzaVariedad):
         self.__variedad = var
     
     def establecerEstado(self, est: int ):

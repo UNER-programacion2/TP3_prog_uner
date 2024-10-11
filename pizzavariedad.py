@@ -1,48 +1,23 @@
-# PizzaVariedad
-# <<Atributos de clase>>
-# <<Atributos de instancia>>
-# nombreVariedad: string
-# precio: float
-# <<Constructores>>
-# PizzaVariedad(nomVar: string, pre: float)
-# Requiere pre > 0.0
-# <<Comandos>>s
-# establecerNombreVariedad(nomVar: string)
-# establecerPrecio(pre: float)
-# Requiere pre > 0.0
-# <<Consultas>>
-# obtenerNombreVariedad(): string
-# obtenerPrecio(): float
-
 class PizzaVariedad:
 
-    def __init__(self, nombreVariedad: str, precio: float):
-        self.__nombreVariedad = nombreVariedad
+    def __init__(self, nomvar: str, precio: float):
+        self.__nombreVariedad = nomvar
         self.__precio = precio    
 
+#####comandos
+    def establecerNombreVariedad(self, nomVar: str):
+        self.nomVariedad = nomVar
 
-    # def PizzaVariedad(self, nomVar: str , pre: float):
-    #     self.__nombreVariedad = nomVar
-    #     self.__precio = pre
+    def establecerPrecio(self, pre: float):
+        self.precio = pre
 
-        
-            
-    # comandos
-    def establecerNombreVariedad(self, nomVariedad: str):
-        self.nomVariedad = nomVariedad
+        if pre <= 0.0:
+            print("Error el precio es menor a cero, reingrese nuevamente: ")
 
-    def establecerPrecio(self, precio: float):
-        self.precio = precio
-
-        if precio <= 0.0:
-            print("Error el precio es menor a cero, reingrse nuevamente :I")
-
-
-
-    # consultas
+######consultas
 
     def obtenerNombreVariedad(self):
-        return self.__nomVariedad
+        return self.__nombreVariedad
 
     def obtenerPrecio(self):
         return self.__precio

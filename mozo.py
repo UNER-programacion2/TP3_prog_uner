@@ -1,13 +1,15 @@
+from  pizza import Pizza
+
 class Mozo:
 
-    def __init__(self, nom: str):
-        self.__nombre = nom
+    def __init__(self, nombre: str):
+        self.__nombre = nombre
         self.__pizzas = []
 
     def establecerNombre(self, nom: str):
         self.__nombre = nom
 
-    def tomarPizzas(self, pizzas):
+    def tomarPizzas(self, pizzas: list[Pizza]):
         pizzasTomadas = len(self.__pizzas)
         pizzasATomar = len(pizzas)
         if (pizzasATomar - pizzasTomadas) < 0:
@@ -29,5 +31,7 @@ class Mozo:
         return self.__pizzas
     
     def obtenerEstadoLibre(self):
+        if len(self.__pizzas) == 0:
+            return True
         pizzasTomadas = len(self.__pizzas)
         return pizzasTomadas < 2

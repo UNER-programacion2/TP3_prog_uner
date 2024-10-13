@@ -3,7 +3,6 @@ from pizzavariedad import *
 
 
 class Orden:
-
     ESTADO_INICIAL = 1
     ESTADO_PARA_ENTREGAR = 2
     ESTADO_ENTREGADA = 3
@@ -31,12 +30,9 @@ class Orden:
             self.__estadoOrden = Orden.ESTADO_ENTREGADA
         else:
             raise ValueError("No se puede hacer esa transición")      
-    #    estadoOrden == Orden.ESTADO_PARA_ENTREGAR
-    #ESTADO_ENTREGADA = 3
-        
+ 
 
 #####<<Consultas>>
-
     def obtenerNroOrden(self):
         return self.__nroOrden
 
@@ -49,13 +45,12 @@ class Orden:
     def calcularTotal(self):
         total = 0
         for pizza in self.__pizzas:
-            # Accedemos al precio de la variedad de cada pizza
-            preTotal = pizza.obtenerVariedad().obtenerPrecio()  # Llama a obtenerPrecio en PizzaVariedad
+            preTotal = pizza.obtenerVariedad().obtenerPrecio()  #llama a obtenerPrecio en PizzaVariedad
             total += preTotal
         return total
 
         
- ######EJEMPLO PASAR A TESTER       
+######EJEMPLO PASAR A TESTER       
 # ejemplo = PizzaVariedad("Muzzarella", 500) 
 # ejempl2 = PizzaVariedad("Napolitana", 540)
 # orden = Orden(1, [ejempl2, ejemplo])

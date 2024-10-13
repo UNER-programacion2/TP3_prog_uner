@@ -38,4 +38,6 @@ class Mozo:
         return self.__pizzas
     
     def obtenerEstadoLibre(self):
-        return len(self.__pizzas) == 0  # Retorna True si la lista de pizzas está vacía
+        if len(self.__pizzas) == 0: 
+            return True
+    

@@ -1,0 +1,28 @@
+6. Indique si las siguientes sentencias son Verdaderas o Falsas:
+a. La clase Mozo y la clase MaestroPizzero están asociadas.
+b. Existe una relación de dependencia entre las clases Mozo y MaestroPizzero.
+c. La clase Orden es proveedora de la clase MaestroPizzero.
+d. La clase MaestroPizzero es proveedora de la clase Pizza.
+e. La clase MaestroPizzero es cliente de la clase Pizza.
+f. La clase Pizza y PizzaVariedad están asociadas.
+g. Existe una relación de dependencia entre las clases PizzaVariedad y Pizza.
+h. La clase Mozo y Pizza están asociadas.
+i. Existe una relación de dependencia entre las clases Orden y PizzaVariedad.
+
+a. Verdadero, la clase Mozo y la clase MaeroPizzero interactúan en el proceso de servir pizzas.
+
+b. Falso, no dependen la clase Mozo y MaestroPizzero para funcionar.
+
+c. Falso, la Clase Orden no provee a MaestroPizzero.
+
+d. Falso, MaestroPizzero solo cocina la pizza , no es proveedora de la misma.
+
+e. Verdadero, la clase MaestroPizzero es cliente de la clase Pizza porque la utiliza para realizar sus tareas como cocinar y entregar.
+
+f. Verdadero, Estana sociadas porque la clase Pizza necesita información de PizzaVariedad como el tipo y precio.
+
+g. Verdadero, Pizza depende de PizzaVariedad para ser creada.
+
+h. Falso, Mozo no está asociada a Pizza, solo las sirve.
+
+i. Falso, la clase  Orden no depende de la clase PizzaVariedad.

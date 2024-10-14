@@ -49,7 +49,7 @@ class Orden:
             total += preTotal
         return total
     def __str__(self):
-        pizzas_str = ', '.join([str(pizza) for pizza in self.__pizzas])
+        pizzas_str = ','.join([str(pizza) for pizza in self.__pizzas])
         return f"Orden #{self.__nroOrden}: [{pizzas_str}] - Estado: {self.__estadoOrden}"
         
 ######EJEMPLO PASAR A TESTER       

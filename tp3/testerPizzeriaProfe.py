@@ -92,11 +92,15 @@ class TesterPizzeria:
 
     def __imprimirEstado(self, maestroPizzero: MaestroPizzero, mozo1: Mozo, mozo2: Mozo):
         print("\nMaestro Pizzero: " + maestroPizzero.obtenerNombre() + "\n==============================")
-        print(maestroPizzero.obtenerOrdenes())
+        for orden in maestroPizzero.obtenerOrdenes():
+            print(orden)
         print("==============================\nMozo: " + mozo1.obtenerNombre() + "\n==============================")
-        print(mozo1.obtenerPizzas())
+        for pizza in mozo1.obtenerPizzas():
+            print(pizza)
         print("==============================\nMozo: " + mozo2.obtenerNombre() + "\n==============================")
-        print(mozo2.obtenerPizzas())
+        for pizza in mozo2.obtenerPizzas():
+            print(pizza)
+
 
 if __name__ == "__main__":
     testerPizzeria = TesterPizzeria()

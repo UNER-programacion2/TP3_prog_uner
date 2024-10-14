@@ -37,4 +37,4 @@ class Pizza:
     # def __repr__(self):
     #     return f"{self.__variedad.obtenerNombreVariedad()} (Estado: {self.__estado})"
     def __str__(self):
-        return f"Pizza de {self.__variedad.obtenerNombre()} - Estado: {self.__estado}"
+        return f"Pizza de {self.__variedad} - Estado: {self.__estado}"

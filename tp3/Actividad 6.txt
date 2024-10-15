@@ -13,13 +13,13 @@ a. Verdadero, la clase Mozo y la clase MaeroPizzero interactúan en el proceso d
 
 b. Falso, no dependen la clase Mozo y MaestroPizzero para funcionar.
 
-c. Falso, la Clase Orden no provee a MaestroPizzero.
+c. Verdadero, la Clase Orden provee a MaestroPizzero.
 
 d. Falso, MaestroPizzero solo cocina la pizza , no es proveedora de la misma.
 
 e. Verdadero, la clase MaestroPizzero es cliente de la clase Pizza porque la utiliza para realizar sus tareas como cocinar y entregar.
 
-f. Verdadero, Estana sociadas porque la clase Pizza necesita información de PizzaVariedad como el tipo y precio.
+f. Verdadero, Estan sociadas porque la clase Pizza necesita información de PizzaVariedad como el tipo y precio.
 
 g. Verdadero, Pizza depende de PizzaVariedad para ser creada.
 

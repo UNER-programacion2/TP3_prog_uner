@@ -79,6 +79,16 @@ class TesterPizzeria:
         
         self.__imprimirEstado(pipo, augus, bea)
 
+        self.__totalOrd(ordenes)
+
+
+    #calcular total de las ordenes
+    def __totalOrd(self, ordenes : list[Orden]):
+        for orden in ordenes:
+            total_ord = orden.calcularTotal()
+            print(f"Total de la orden {str(orden.obtenerNroOrden())}: {total_ord}" )
+
+    
     def __imprimirEstado(self, maestroPizzero: MaestroPizzero, mozo1: Mozo, mozo2: Mozo):
         print("\nMaestro Pizzero: " + maestroPizzero.obtenerNombre() + "\n==============================")
         for orden in maestroPizzero.obtenerOrdenes():
@@ -90,6 +100,8 @@ class TesterPizzeria:
         for pizza in mozo2.obtenerPizzas():
             print(pizza)
 
+    # total = Orden.calcularTotal()
+    # print(f"Costo total de la orden: ${total:.2f}")
 
 if __name__ == "__main__":
     testerPizzeria = TesterPizzeria()

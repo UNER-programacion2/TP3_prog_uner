@@ -17,7 +17,7 @@ class MaestroPizzero:
 
     def cocinar(self):
         for orden in self.__ordenes:
-            if orden.obtenerEstadoOrden() == Orden.ESTADO_INICIAL:  #
+            if orden.obtenerEstadoOrden() == Orden.ESTADO_INICIAL:  
                 orden.establecerEstadoOrden(Orden.ESTADO_PARA_ENTREGAR)  
                 for pizza in orden.obtenerPizzas():
                     pizza.establecerEstado(Pizza.ESTADO_COCINADA)  

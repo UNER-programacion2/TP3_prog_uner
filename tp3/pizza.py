@@ -5,6 +5,12 @@ class Pizza:
     ESTADO_POR_COCINAR = 1
     ESTADO_COCINADA = 2
     ESTADO_ENTREGADA = 3
+    
+    __ESTADOS = {
+        ESTADO_POR_COCINAR: "1 - Pizza por Cocinar",
+        ESTADO_COCINADA: "2 - Pizza cocinada",
+        ESTADO_ENTREGADA: "3 - Pizza entregada"
+    }
 
 #####<<Atributos de instancia>>
     def __init__(self, var: PizzaVariedad):
@@ -36,5 +42,8 @@ class Pizza:
     
     # def __repr__(self):
     #     return f"{self.__variedad.obtenerNombreVariedad()} (Estado: {self.__estado})"
+
     def __str__(self):
-        return f"Pizza de {self.__variedad} - Estado: {self.__estado}"
+        estado_str = Pizza.__ESTADOS[self.__estado]  
+        return f"Pizza de {self.__variedad.obtenerNombreVariedad()} - Estado: {estado_str}"
+        

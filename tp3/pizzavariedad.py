@@ -20,5 +20,6 @@ class PizzaVariedad:
 
     def obtenerPrecio(self):
         return self.__precio
+        
     def __str__(self):
         return f"{self.__nombreVariedad} - ${self.__precio}"

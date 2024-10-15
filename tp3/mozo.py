@@ -1,11 +1,11 @@
 from pizza import Pizza 
-from pizzavariedad import PizzaVariedad  
+#from pizzavariedad import PizzaVariedad  
 
 class Mozo:
 #####<<Atributos de instancia>>
-    def __init__(self, nombre: str):
+    def __init__(self, nombre: str ):
         self.__nombre = nombre
-        self.__pizzas = []  
+        self.__pizzas = [] 
 #####<<Comandos>>
     def establecerNombre(self, nom: str):
         self.__nombre = nom
@@ -14,12 +14,10 @@ class Mozo:
         pizzasTomadas = len(self.__pizzas)
         pizzasATomar = len(pizzas)
 
-       
         if pizzasTomadas + pizzasATomar > 2:
             print(self.__nombre + ": El mozo puede tomar un máximo de 2 pizzas!")
             return
-        
-        
+
         for pizza in pizzas:
             print(self.__nombre + ": tomando una Pizza de " + pizza.obtenerVariedad().obtenerNombreVariedad() + " para ser entregada")
             self.__pizzas.append(pizza)
@@ -28,6 +26,7 @@ class Mozo:
         for pizza in self.__pizzas:
             print(self.__nombre + ": Sirviendo pizza de " + pizza.obtenerVariedad().obtenerNombreVariedad())
         self.__pizzas = []  
+
 
 #####<<Consultas>>
 

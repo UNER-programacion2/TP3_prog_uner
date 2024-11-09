@@ -1,6 +1,5 @@
 # TP3_prog_uner
 
-# TP2 Programacion II - Uner
 
 __Integrantes__ 
 
